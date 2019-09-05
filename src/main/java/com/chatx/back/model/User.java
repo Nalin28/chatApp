@@ -4,15 +4,15 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
-public class Register {
+public class User {
 
     @Id
     private String username;
     private String password;
 
-    Register(){ }
+    public User(){ }
 
-    public Register(String username, String password) {
+    public User(String username, String password) {
         this.username = username;
         this.password = password;
     }
@@ -35,7 +35,7 @@ public class Register {
 
     @Override
     public String toString() {
-        return "Register{" +
+        return "User{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';

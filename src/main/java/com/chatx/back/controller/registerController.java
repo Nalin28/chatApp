@@ -1,6 +1,6 @@
 package com.chatx.back.controller;
 
-import com.chatx.back.model.Register;
+import com.chatx.back.model.User;
 import com.chatx.back.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +18,8 @@ public class registerController {
     }
 
     @PostMapping("/registerNew")
-    public boolean checkRegistry(@RequestBody Register register){
-        return registerService.saveUser(register);
+    public boolean checkRegistry(@RequestBody User user){
+        return registerService.saveUser(user);
     }
 
 }

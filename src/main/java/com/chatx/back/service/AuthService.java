@@ -8,18 +8,21 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @EnableMongoRepositories(basePackageClasses = RegisterDao.class)
 @Configuration
-public class RegisterService {
+public class AuthService {
 
     @Autowired
     private RegisterDao registerDao;
 
-    public boolean checkUsername(String username){
+    public boolean userValidity(User user) {
 
-        return !(registerDao.existsById(username));
+        if (registerDao.existsById(user.getUsername())) {
+            User user1 = registerDao.findById(user.getUsername()).get();
+            System.out.println(user);
+            System.out.println(user1);
+            if (user1.getPassword().equals(user.getPassword()))
+                return true;
+        }
+        return false;
     }
 
-    public boolean saveUser(User user){
-        registerDao.save(user);
-        return true;
-    }
 }
