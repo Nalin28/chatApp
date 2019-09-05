@@ -1,17 +1,25 @@
 package com.chatx.back.controller;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.chatx.back.model.Register;
+import com.chatx.back.service.RegisterService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
 public class registerController {
 
-    @GetMapping("/hello")
-    public String getHello(){
-        return "hello";
+    @Autowired
+    private RegisterService registerService;
+
+    @PostMapping("/checkAvailability/{username}")
+    public boolean checkRegistry(@PathVariable String username){
+        return registerService.checkUsername(username);
     }
 
+    @PostMapping("/registerNew")
+    public boolean checkRegistry(@RequestBody Register register){
+        return registerService.saveUser(register);
+    }
 
 }
