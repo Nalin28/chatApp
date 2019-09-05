@@ -60,7 +60,7 @@
                             <outputDirectory>${project.build.directory}/classes/static/</outputDirectory >
                             <resources>
                                 <resource>
-                                    <directory>../chatx/dist/chatx</directory>
+                                    <directory>../../chatx/dist/chatx</directory>
                                 </resource>
                             </resources>
                         </configuration>

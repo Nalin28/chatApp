@@ -1,11 +1,11 @@
-com/chatx/back/controller/ChatController.class
 com/chatx/back/repository/ChatDao.class
 com/chatx/back/service/AuthService.class
+com/chatx/back/service/RegisterService.class
+com/chatx/back/model/User.class
 com/chatx/back/repository/RegisterDao.class
 com/chatx/back/controller/registerController.class
+com/chatx/back/model/Chat.class
+com/chatx/back/controller/ChatController.class
 com/chatx/back/BackApplication.class
-com/chatx/back/service/RegisterService.class
 com/chatx/back/controller/LoginController.class
 com/chatx/back/service/ChatService.class
-com/chatx/back/model/Chat.class
-com/chatx/back/model/User.class
