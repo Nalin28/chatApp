@@ -6,8 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Chat {
 
-    String username;
-    String message;
+    private String username;
+    private String message;
 
     public Chat(String username, String message) {
         this.username = username;
