@@ -1,0 +1,11 @@
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/repository/RegisterDao.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/model/Chat.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/repository/ChatDao.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/controller/registerController.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/service/RegisterService.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/model/User.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/controller/LoginController.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/controller/ChatController.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/BackApplication.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/service/ChatService.java
+/home/amank/Desktop/chatX/chatXBack/back/src/main/java/com/chatx/back/service/AuthService.java
