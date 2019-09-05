@@ -3,10 +3,7 @@ package com.chatx.back.controller;
 import com.chatx.back.model.Chat;
 import com.chatx.back.service.ChatService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,5 +17,10 @@ public class ChatController {
     @PostMapping("/chat")
     public List<Chat> chatHistory(@RequestBody Chat chat){
         return chatService.saveChat(chat);
+    }
+
+    @GetMapping("/history")
+    public List<Chat> getHistory(){
+        return chatService.getChat();
     }
 }

@@ -20,4 +20,8 @@ public class ChatService {
         chatDao.save(chat);
         return chatDao.findAll();
     }
+
+    public List<Chat> getChat(){
+        return chatDao.findAll();
+    }
 }
