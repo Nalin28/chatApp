@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.chatx.back.BackApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.231 s - in com.chatx.back.BackApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.842 s - in com.chatx.back.BackApplicationTests
